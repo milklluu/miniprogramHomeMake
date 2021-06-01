@@ -5,6 +5,23 @@ Page({
    * Page initial data
    */
   data: {
+    tabs:['全部','在找','提供'],
+    currentTabIndex:0,
+    categoryList:[
+      
+      {
+        "id":1,
+        "name":"保洁"
+      },
+      {
+        "id":2,
+        "name":"汽修"
+      },
+      {
+        "id":3,
+        "name":"疏浚"
+      }
+    ]
 
   },
 

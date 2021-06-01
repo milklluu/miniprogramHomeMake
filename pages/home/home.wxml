@@ -1,2 +1,12 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<view class="container">
+  <view class="tabs"></view>
+  <view class="category">
+    <swiper display-multiple-items="{{2}}" next-margin="60rpx">
+      <swiper-item wx:for="{{categoryList}}" wx:key="index">
+        <view class="category-swipter-item">{{item.name}}</view>
+      </swiper-item>
+    </swiper>
+  </view>
+  <view class="tab-panel"></view>
+</view>
