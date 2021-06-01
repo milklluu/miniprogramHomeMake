@@ -1,0 +1,47 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/publish/publish",
+    "pages/my/my",
+    "pages/message/message"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "making",
+    "navigationBarTextStyle": "black"
+  },
+  "tabBar": {
+    "borderStyle": "white",
+    "selectedColor": "#fbc02d",
+    "color": "#8a8a8a",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "广场",
+        "selectedIconPath": "",
+        "iconPath": ""
+      },
+      {
+        "pagePath": "pages/publish/publish",
+        "text": "发布",
+        "selectedIconPath": "",
+        "iconPath": ""
+      },
+      {
+        "pagePath": "pages/message/message",
+        "text": "消息",
+        "selectedIconPath": "",
+        "iconPath": ""
+      },
+      {
+        "pagePath": "pages/my/my",
+        "text": "我的",
+        "selectedIconPath": "",
+        "iconPath": ""
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}
