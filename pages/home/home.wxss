@@ -14,3 +14,9 @@
   flex-direction: column;
   align-items: center;
 }
+.divider{
+  margin-top:10rpx;
+  height:6rpx;
+  width:50rpx;
+  background-color:#f3d066 ;
+}
