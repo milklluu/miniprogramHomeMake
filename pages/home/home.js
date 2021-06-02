@@ -31,7 +31,13 @@ Page({
   onLoad: function (options) {
 
   },
+  handleTabChange:function(event){
 
+  },
+  handleCategoryChange:function(event){
+    const id=event.currentTarget.dataset.id;
+    
+  },
   /**
    * Lifecycle function--Called when page is initially rendered
    */
