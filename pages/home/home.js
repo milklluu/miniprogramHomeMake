@@ -1,4 +1,6 @@
 // pages/home/home.js
+import Service from "../../model/service"
+const service = new Service()
 Page({
 
   /**
@@ -29,8 +31,15 @@ Page({
    * Lifecycle function--Called when page load
    */
   onLoad: function (options) {
-
+//excute 1
+//excute 2
+//...
+    this._getServiceList()
   },
+  _getServiceList(){
+    service.getServiceList(1,10)
+  },
+
   handleTabChange:function(event){
 
   },
