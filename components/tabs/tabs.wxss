@@ -28,3 +28,7 @@
   color:#333;
   font-weight: bold;
 }
+
+.tab-panel{
+  flex:1;
+}

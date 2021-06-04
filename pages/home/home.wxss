@@ -1,9 +1,7 @@
 /* pages/home/home.wxss */
-/* .container {
+.container {
   height: 100%;
-  display: flex;
-  flex-direction: column;
-}  */
+} 
 
 .category-swipter-item{
   border-radius: 20rpx;

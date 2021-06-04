@@ -1,4 +1,2 @@
-<!--pages/message/message.wxml-->
-<wxs src="../../common/wxs/tools.wxs" module="tools"/>
+pages/message/message.wxml
 
-<view id="tapTest" data-hi="Weixin" bindtap="{{tools.tapName}}"> Click me! </view>

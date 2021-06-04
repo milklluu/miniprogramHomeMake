@@ -27,6 +27,9 @@ Component({
     handleTabChange:function(event){
   
       const index=event.currentTarget.dataset.index
+      if(index=== this.data.currentTabIndex){
+        return
+      }
       this.setData({
         currentTabIndex:index
       })
@@ -34,7 +37,22 @@ Component({
       this.triggerEvent('change', {index})
     },
     handleTouchMove:function(event){
-      console.log(event)
+      const direction=event.direction
+      const currentTabIndex=this.data.currentTabIndex
+      const targetTabIndex=currentTabIndex+direction
+      if(targetTabIndex<0 || targetTabIndex>this.data.tabs.length-1)
+      {
+        return
+      }
+      const customEvent={
+        currentTarget:{
+          dataset:{
+            index:targetTabIndex
+          }
+        }
+      }
+      this.handleTabChange(customEvent)
+      //console.log(event)
     }
 
   }
