@@ -3,7 +3,8 @@
     "pages/home/home",
     "pages/publish/publish",
     "pages/my/my",
-    "pages/message/message"
+    "pages/message/message",
+    "components/service-preview/service-preview"
   ],
   "window": {
     "backgroundTextStyle": "light",

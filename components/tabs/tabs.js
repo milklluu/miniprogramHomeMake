@@ -37,7 +37,7 @@ Component({
       this.triggerEvent('change', {index})
     },
     handleTouchMove:function(event){
-      const direction=event.direction
+      const direction=-event.direction
       const currentTabIndex=this.data.currentTabIndex
       const targetTabIndex=currentTabIndex+direction
       if(targetTabIndex<0 || targetTabIndex>this.data.tabs.length-1)
