@@ -1,11 +1,17 @@
-// components/service-preview/service-preview.js
+// components/icon/icon.js
 Component({
   /**
    * Component properties
    */
   properties: {
-    "service":{
-      type:Object
+    name:String,
+    color:{
+      type:String,
+      value:"#FBC02D"
+    },
+    size:{
+      type:String,
+      value:"34"
     }
   },
 

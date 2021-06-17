@@ -12,7 +12,6 @@ Page({
     tabs:['全部','在找','提供'],
     currentTabIndex:0,
     categoryList:[]
-
   },
 
   /**
@@ -27,7 +26,10 @@ Page({
   },
   async _getServiceList(){
     const serviceList=await service.getServiceList(1,10)
-    //console.log(serviceList)
+    this.setData({
+      serviceList:serviceList.data,
+    })
+    console.log(serviceList)
   },
   async _getCategoryList(){
     const categoryList=await Category.getCategoryListWithAll()
@@ -90,5 +92,11 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  onPullDownRefresh:function(){
+   console.log("pulldown refresh")
+  },
+  onReachBottom:function(){
+    console.log("reach bottom")
   }
 })

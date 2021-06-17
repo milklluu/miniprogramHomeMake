@@ -13,7 +13,12 @@
         </swiper>
       </view>
     </view>
-    <view slot="panel">111</view>
+    <view slot="panel">
+      <view wx:for="{{serviceList}}" wx:key="index">
+       <i-service-preview service="{{item}}"></i-service-preview>
+       
+      </view>
+    </view>
   </i-tabs>
   
 </view>
